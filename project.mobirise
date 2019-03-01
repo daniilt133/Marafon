@@ -3,7 +3,7 @@
     "name": "Марафон",
     "currentPage": "index.html",
     "versionFirst": "4.0.14",
-    "uniqCompNum": 54,
+    "uniqCompNum": 56,
     "versionPublish": "4.9.3",
     "theme": {
       "name": "mobirise4",
@@ -637,13 +637,13 @@
             }
           },
           "_name": "video1",
-          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Полная ширина\" name=\"fullWidth\">\n\n    <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Ширина\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Градиент\" name=\"gradientBg\" condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Цвет 2\" name=\"color2\" value=\"#b2ccd2\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://www.youtube.com/watch?v=inrgWk1QDHM&feature=share&loop=0&autoplay=0\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
-          "_cid": "rjt4ZXOBVS",
-          "_anchor": "video1-1e",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Полная ширина\" name=\"fullWidth\">\n\n    <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Ширина\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Градиент\" name=\"gradientBg\" condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Цвет 2\" name=\"color2\" value=\"#b2ccd2\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://www.youtube.com/watch?v=inrgWk1QDHM&feature=share&loop=1&autoplay=1\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
+          "_cid": "rjtuQd0Npx",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "video1-1j"
         },
         {
           "_styles": {
@@ -724,6 +724,27 @@
         },
         {
           "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".mbr-section-subtitle DIV": {
+              "color": "#232323"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">Приз</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\"><div>В нашем марафоне будет 3 призовых места: За одно из которых вы получите приз 3000р</div></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rjnspT7eSA",
+          "_anchor": "content4-v",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
             "background": "@bgColor",
             "& when (@fullWidth = false)": {
               "padding-top": "(@paddingTop * 15px)",
@@ -745,34 +766,13 @@
             }
           },
           "_name": "video1",
-          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Полная ширина\" name=\"fullWidth\">\n\n    <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Ширина\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Градиент\" name=\"gradientBg\" condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Цвет 2\" name=\"color2\" value=\"#b2ccd2\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://www.youtube.com/watch?v=abXaW09VKO4&feature=share&loop=0&autoplay=0\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
-          "_cid": "rjt4TLXJRZ",
-          "_anchor": "video1-1d",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Полная ширина\" name=\"fullWidth\">\n\n    <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Ширина\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Градиент\" name=\"gradientBg\" condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Цвет 2\" name=\"color2\" value=\"#b2ccd2\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://www.youtube.com/watch?v=abXaW09VKO4&feature=share&loop=1&autoplay=1\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
+          "_cid": "rjtuORZ47R",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".mbr-section-subtitle": {
-              "color": "#767676"
-            },
-            ".mbr-section-subtitle DIV": {
-              "color": "#232323"
-            }
-          },
-          "_name": "content4",
-          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">Приз</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\"><div>В нашем марафоне будет 3 призовых места: За одно из которых вы получите приз 3000р</div></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rjnspT7eSA",
-          "_anchor": "content4-v",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "video1-1i"
         },
         {
           "_styles": {
