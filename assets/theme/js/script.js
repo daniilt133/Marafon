@@ -701,7 +701,7 @@
                 var videoIframe = $(item).parents('section').find('iframe')[0],
                     videoIframeSrc = $(videoIframe).attr('src');
 
-                item.parents('section').css('z-index', '1');
+                item.parents('section').css('z-index', '5000');
 
                 if (videoIframeSrc.indexOf('youtu') !== -1) {
                     videoIframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
@@ -976,8 +976,7 @@
             $('.mbr-slider.carousel').each(function(){
                 var $slider = $(this),
                     controls = $slider.find('.carousel-control'),
-                    indicators = $slider.find('carousel-indicators li');
-
+                    indicators = $slider.find('.carousel-indicators li');
                 $slider.on('slide.bs.carousel', function () {
                     controls.bind('click',function(event){
                         clickPrev(event);
@@ -1003,4 +1002,4 @@
         }
     }
 })(jQuery);
-!function(){try{document.getElementsByClassName("engine")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.className="engine";a.innerHTML='<a href="https://mobirise.info">Mobirise</a> Mobirise v4.5.2';document.body.insertBefore(a,document.body.childNodes[0])}}();
+!function(){try{document.getElementsByClassName("engine")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.className="engine";a.innerHTML='<a href="https://mobirise.ws">Mobirise Website Builder</a> v4.9.3';document.body.insertBefore(a,document.body.childNodes[0])}}();
