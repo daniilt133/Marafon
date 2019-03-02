@@ -1799,6 +1799,9 @@ body {
     padding-right: 4rem;
   }
 }
+.cid-rjxbTzgdA0 .mbr-section-title {
+  color: #232323;
+}
 .cid-rjxd9kp6Wy {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -1955,6 +1958,7 @@ body {
 }
 .cid-rjxegS3RhE .mbr-section-subtitle {
   color: #767676;
+  text-align: left;
 }
 .cid-rjxegS3RhE a:not([href]):not([tabindex]) {
   color: #fff;
